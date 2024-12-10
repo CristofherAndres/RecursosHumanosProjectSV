@@ -24,4 +24,6 @@ urlpatterns = [
     path('empleadoV2/', EmpleadoV2),
     path('empleadosAPI/', Empleado_List),
     path('empleadosAPI/<int:pk>', Empleado_Detail),
+    path('cEmpleadoAPI/', EmpleadoList.as_view()),
+    path('cEmpleadoAPI/<int:pk>', EmpleadoDetail.as_view())
 ]
